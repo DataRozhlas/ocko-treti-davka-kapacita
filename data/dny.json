@@ -1,0 +1,310 @@
+{
+  "1631836800000": {
+    "volna_kapacita": 76,
+    "maximalni_kapacita": 76
+  },
+  "1631923200000": {
+    "volna_kapacita": 66,
+    "maximalni_kapacita": 66
+  },
+  "1632009600000": {
+    "volna_kapacita": 106,
+    "maximalni_kapacita": 106
+  },
+  "1632096000000": {
+    "volna_kapacita": 2526,
+    "maximalni_kapacita": 2617
+  },
+  "1632182400000": {
+    "volna_kapacita": 3508,
+    "maximalni_kapacita": 3593
+  },
+  "1632268800000": {
+    "volna_kapacita": 4642,
+    "maximalni_kapacita": 4732
+  },
+  "1632355200000": {
+    "volna_kapacita": 4419,
+    "maximalni_kapacita": 4529
+  },
+  "1632441600000": {
+    "volna_kapacita": 3498,
+    "maximalni_kapacita": 3608
+  },
+  "1632528000000": {
+    "volna_kapacita": 1334,
+    "maximalni_kapacita": 1376
+  },
+  "1632614400000": {
+    "volna_kapacita": 1298,
+    "maximalni_kapacita": 1327
+  },
+  "1632700800000": {
+    "volna_kapacita": 4032,
+    "maximalni_kapacita": 4218
+  },
+  "1632787200000": {
+    "volna_kapacita": 1664,
+    "maximalni_kapacita": 1680
+  },
+  "1632873600000": {
+    "volna_kapacita": 5230,
+    "maximalni_kapacita": 5548
+  },
+  "1632960000000": {
+    "volna_kapacita": 5783,
+    "maximalni_kapacita": 6136
+  },
+  "1633046400000": {
+    "volna_kapacita": 4916,
+    "maximalni_kapacita": 5465
+  },
+  "1633132800000": {
+    "volna_kapacita": 1196,
+    "maximalni_kapacita": 1226
+  },
+  "1633219200000": {
+    "volna_kapacita": 1074,
+    "maximalni_kapacita": 1097
+  },
+  "1633305600000": {
+    "volna_kapacita": 4543,
+    "maximalni_kapacita": 5059
+  },
+  "1633392000000": {
+    "volna_kapacita": 4848,
+    "maximalni_kapacita": 5478
+  },
+  "1633478400000": {
+    "volna_kapacita": 6136,
+    "maximalni_kapacita": 7060
+  },
+  "1633564800000": {
+    "volna_kapacita": 5446,
+    "maximalni_kapacita": 6251
+  },
+  "1633651200000": {
+    "volna_kapacita": 4997,
+    "maximalni_kapacita": 6261
+  },
+  "1633737600000": {
+    "volna_kapacita": 1299,
+    "maximalni_kapacita": 1570
+  },
+  "1633824000000": {
+    "volna_kapacita": 1348,
+    "maximalni_kapacita": 1465
+  },
+  "1633910400000": {
+    "volna_kapacita": 4894,
+    "maximalni_kapacita": 5796
+  },
+  "1633996800000": {
+    "volna_kapacita": 4878,
+    "maximalni_kapacita": 6037
+  },
+  "1634083200000": {
+    "volna_kapacita": 5804,
+    "maximalni_kapacita": 7244
+  },
+  "1634169600000": {
+    "volna_kapacita": 6341,
+    "maximalni_kapacita": 8120
+  },
+  "1634256000000": {
+    "volna_kapacita": 6097,
+    "maximalni_kapacita": 8046
+  },
+  "1634342400000": {
+    "volna_kapacita": 1365,
+    "maximalni_kapacita": 1871
+  },
+  "1634428800000": {
+    "volna_kapacita": 1442,
+    "maximalni_kapacita": 1724
+  },
+  "1634515200000": {
+    "volna_kapacita": 4235,
+    "maximalni_kapacita": 6335
+  },
+  "1634601600000": {
+    "volna_kapacita": 3691,
+    "maximalni_kapacita": 7634
+  },
+  "1634688000000": {
+    "volna_kapacita": 4153,
+    "maximalni_kapacita": 10856
+  },
+  "1634774400000": {
+    "volna_kapacita": 3412,
+    "maximalni_kapacita": 12042
+  },
+  "1634860800000": {
+    "volna_kapacita": 3443,
+    "maximalni_kapacita": 12732
+  },
+  "1634947200000": {
+    "volna_kapacita": 1201,
+    "maximalni_kapacita": 3165
+  },
+  "1635033600000": {
+    "volna_kapacita": 924,
+    "maximalni_kapacita": 2439
+  },
+  "1635120000000": {
+    "volna_kapacita": 0,
+    "maximalni_kapacita": 10868
+  },
+  "1635206400000": {
+    "volna_kapacita": 2424,
+    "maximalni_kapacita": 15084
+  },
+  "1635292800000": {
+    "volna_kapacita": 3684,
+    "maximalni_kapacita": 18843
+  },
+  "1635379200000": {
+    "volna_kapacita": 1538,
+    "maximalni_kapacita": 4850
+  },
+  "1635465600000": {
+    "volna_kapacita": 4775,
+    "maximalni_kapacita": 16205
+  },
+  "1635552000000": {
+    "volna_kapacita": 1694,
+    "maximalni_kapacita": 4538
+  },
+  "1635638400000": {
+    "volna_kapacita": 1022,
+    "maximalni_kapacita": 3907
+  },
+  "1635724800000": {
+    "volna_kapacita": 4911,
+    "maximalni_kapacita": 17433
+  },
+  "1635811200000": {
+    "volna_kapacita": 6393,
+    "maximalni_kapacita": 19143
+  },
+  "1635897600000": {
+    "volna_kapacita": 7631,
+    "maximalni_kapacita": 22970
+  },
+  "1635984000000": {
+    "volna_kapacita": 7710,
+    "maximalni_kapacita": 20663
+  },
+  "1636070400000": {
+    "volna_kapacita": 7575,
+    "maximalni_kapacita": 20401
+  },
+  "1636156800000": {
+    "volna_kapacita": 4465,
+    "maximalni_kapacita": 7927
+  },
+  "1636243200000": {
+    "volna_kapacita": 3577,
+    "maximalni_kapacita": 5159
+  },
+  "1636329600000": {
+    "volna_kapacita": 9887,
+    "maximalni_kapacita": 17684
+  },
+  "1636416000000": {
+    "volna_kapacita": 10423,
+    "maximalni_kapacita": 17038
+  },
+  "1636502400000": {
+    "volna_kapacita": 11806,
+    "maximalni_kapacita": 18581
+  },
+  "1636588800000": {
+    "volna_kapacita": 12116,
+    "maximalni_kapacita": 17576
+  },
+  "1636675200000": {
+    "volna_kapacita": 10650,
+    "maximalni_kapacita": 16314
+  },
+  "1636761600000": {
+    "volna_kapacita": 3779,
+    "maximalni_kapacita": 4375
+  },
+  "1636848000000": {
+    "volna_kapacita": 2361,
+    "maximalni_kapacita": 3008
+  },
+  "1636934400000": {
+    "volna_kapacita": 9357,
+    "maximalni_kapacita": 12254
+  },
+  "1637020800000": {
+    "volna_kapacita": 9769,
+    "maximalni_kapacita": 12229
+  },
+  "1637107200000": {
+    "volna_kapacita": 3416,
+    "maximalni_kapacita": 3679
+  },
+  "1637193600000": {
+    "volna_kapacita": 9874,
+    "maximalni_kapacita": 12083
+  },
+  "1637280000000": {
+    "volna_kapacita": 9658,
+    "maximalni_kapacita": 11896
+  },
+  "1637366400000": {
+    "volna_kapacita": 3691,
+    "maximalni_kapacita": 4039
+  },
+  "1637452800000": {
+    "volna_kapacita": 2134,
+    "maximalni_kapacita": 2306
+  },
+  "1637539200000": {
+    "volna_kapacita": 9115,
+    "maximalni_kapacita": 10336
+  },
+  "1637625600000": {
+    "volna_kapacita": 9848,
+    "maximalni_kapacita": 10585
+  },
+  "1637712000000": {
+    "volna_kapacita": 10472,
+    "maximalni_kapacita": 11477
+  },
+  "1637798400000": {
+    "volna_kapacita": 9900,
+    "maximalni_kapacita": 10826
+  },
+  "1637884800000": {
+    "volna_kapacita": 9220,
+    "maximalni_kapacita": 9955
+  },
+  "1637971200000": {
+    "volna_kapacita": 3031,
+    "maximalni_kapacita": 3120
+  },
+  "1638057600000": {
+    "volna_kapacita": 2142,
+    "maximalni_kapacita": 2160
+  },
+  "1638144000000": {
+    "volna_kapacita": 8709,
+    "maximalni_kapacita": 9428
+  },
+  "1638230400000": {
+    "volna_kapacita": 9377,
+    "maximalni_kapacita": 9861
+  },
+  "1638316800000": {
+    "volna_kapacita": 8432,
+    "maximalni_kapacita": 8648
+  },
+  "1638403200000": {
+    "volna_kapacita": 7203,
+    "maximalni_kapacita": 7473
+  }
+}
