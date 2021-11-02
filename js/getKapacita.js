@@ -38,6 +38,11 @@ getData(
     }
     return acc;
   }, {});
+
   // write data to file
-  fs.writeFileSync("./data/dny.json", JSON.stringify(dny, null, 2), "utf8");
+  fs.writeFileSync(
+    "./data/kapacita.json",
+    JSON.stringify(dny, null, 2),
+    "utf8"
+  );
 });

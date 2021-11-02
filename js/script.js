@@ -1,4 +1,9 @@
-﻿import "./byeie"; // loučíme se s IE
+﻿import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App.jsx";
+import "./byeie"; // loučíme se s IE
+
+ReactDOM.render(<App />, document.getElementById("app"));
 
 /*
 // snadné načtení souboru pro každého!
