@@ -1,4 +1,4 @@
-title: "Jak dlouho budete čekat na třetí dávku?"
+title: ""
 perex: ""
 styles: []
 libraries: [] #jquery, d3, highcharts, datatables

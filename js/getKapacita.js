@@ -1,10 +1,10 @@
 const fs = require("fs");
+const request = require("request");
 
 // read JSON data in node.js
 
 const getData = (url) => {
   return new Promise((resolve, reject) => {
-    const request = require("request");
     request(url, (error, response, body) => {
       if (error) {
         reject(error);
