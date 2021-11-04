@@ -30,6 +30,13 @@ function App() {
           kapacita[key].volna_kapacita,
         ]),
       },
+      {
+        name: "maximální kapacita na třetí dávku",
+        data: Object.keys(kapacita).map((key) => [
+          Number(key),
+          kapacita[key].maximalni_kapacita,
+        ]),
+      },
     ],
   });
 
