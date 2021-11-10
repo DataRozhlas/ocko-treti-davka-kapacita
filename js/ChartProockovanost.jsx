@@ -8,7 +8,10 @@ function ChartProockovanost({ data }) {
       type: "area",
     },
     title: {
-      text: data.name,
+      text:
+        data.name !== "Všechny věkové skupiny"
+          ? `Věková skupina ${data.name} let`
+          : data.name,
     },
     credits: {
       enabled: false,
