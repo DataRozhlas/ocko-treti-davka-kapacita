@@ -145,46 +145,41 @@ getData(
     (acc, curr) => {
       acc.Z = acc.Z + curr.Z;
       acc.M = acc.M + curr.M;
-      if (Object.keys(acc.davka1).length > 0) {
-        const keys = Object.keys(curr.davka1);
-        keys.forEach((i) => {
-          acc.davka1[i]
-            ? (acc.davka1[i] = acc.davka1[i] + curr.davka1[i])
-            : (acc.davka1[i] = curr.davka1[i]);
-        });
-      } else {
-        acc.davka1 = curr.davka1;
-      }
-      if (Object.keys(acc.davka2).length > 0) {
-        const keys = Object.keys(curr.davka2);
-        keys.forEach((i) => {
-          acc.davka2[i]
-            ? (acc.davka2[i] = acc.davka2[i] + curr.davka2[i])
-            : (acc.davka2[i] = curr.davka2[i]);
-        });
-      } else {
-        acc.davka2 = curr.davka2;
-      }
-      if (Object.keys(acc.davka3).length > 0) {
-        const keys = Object.keys(curr.davka3);
-        keys.forEach((i) => {
-          acc.davka3[i]
-            ? (acc.davka3[i] = acc.davka3[i] + curr.davka3[i])
-            : (acc.davka3[i] = curr.davka3[i]);
-        });
-      } else {
-        acc.davka3 = curr.davka3;
-      }
+      const keys1 = Object.keys(curr.davka1);
+      keys1.forEach((i) => {
+        acc.davka1[i]
+          ? (acc.davka1[i] = acc.davka1[i] + curr.davka1[i])
+          : (acc.davka1[i] = curr.davka1[i]);
+      });
+      const keys2 = Object.keys(curr.davka2);
+      keys2.forEach((i) => {
+        acc.davka2[i]
+          ? (acc.davka2[i] = acc.davka2[i] + curr.davka2[i])
+          : (acc.davka2[i] = curr.davka2[i]);
+      });
+      const keys3 = Object.keys(curr.davka3);
+      keys3.forEach((i) => {
+        acc.davka3[i]
+          ? (acc.davka3[i] = acc.davka3[i] + curr.davka3[i])
+          : (acc.davka3[i] = curr.davka3[i]);
+      });
 
       return acc;
     },
-    { name: "all", M: 0, Z: 0, davka1: {}, davka2: {}, davka3: {} }
+    {
+      name: "Všechny věkové skupiny",
+      M: 0,
+      Z: 0,
+      davka1: {},
+      davka2: {},
+      davka3: {},
+    }
   );
 
   // write data to file
   fs.writeFileSync(
     "./data/davky_demo.json",
-    JSON.stringify([...ockovaniPoDnech, ockovaniPoDnechAll], null, 2),
+    JSON.stringify([ockovaniPoDnechAll, ...ockovaniPoDnech], null, 2),
     "utf8"
   );
 
