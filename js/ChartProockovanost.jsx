@@ -43,6 +43,15 @@ function ChartProockovanost({ data }) {
           .map((k) => [Number(k), (data.davka2[k] / (data.Z + data.M)) * 100]),
       },
       {
+        name: "nárok na 3. dávku",
+        data: Object.keys(data.narok)
+          .sort((a, b) => Number(a) - Number(b))
+          .map((k) => [
+            Number(k) + 15778800000,
+            (data.narok[k] / (data.Z + data.M)) * 100,
+          ]),
+      },
+      {
         name: "3. dávka",
         data: Object.keys(data.davka3)
           .sort((a, b) => Number(a) - Number(b))

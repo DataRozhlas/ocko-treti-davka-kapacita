@@ -71,6 +71,7 @@ const zdrcniVekoveSkupiny = (vekoveSkupiny, hranice) => {
   return result;
 };
 
+// pokud některý den některá skupina chybí, vezmi číslo z předchozího dne, aby v grafu nebyl zub
 const vyhlad = (davka) => {
   const keys = Object.keys(davka);
   const min = Math.min(...keys.map((i) => parseInt(i)));
@@ -92,10 +93,7 @@ getData(
     })
     .sort((a, b) => a.date - b.date);
   const zdrcnuteSkupiny = zdrcniVekoveSkupiny(vekoveSkupiny, hranice);
-  // const skupinyUnique = vakcinaceDemo.data.reduce((acc, curr) => {
-  //   acc.includes(curr.vekova_skupina) ? null : acc.push(curr.vekova_skupina);
-  //   return acc;
-  // }, []);
+
   const ockovaniPoDnech = zdrcnuteSkupiny.map((skupina) => {
     return {
       ...skupina,
@@ -143,6 +141,24 @@ getData(
           }
           return acc;
         }, {}),
+      narok: vakcinaceDemo
+        .filter((i) => {
+          return (
+            i.vekova_skupina === skupina.name &&
+            ((i.poradi_davky === 2 && i.vakcina_kod !== "CO04") ||
+              (i.poradi_davky === 1 && i.vakcina_kod === "CO04"))
+          );
+        })
+        .reduce((acc, curr) => {
+          if (Object.keys(acc).length > 0) {
+            const keys = Object.keys(acc).map((i) => Number(i));
+            const last = Math.max(...keys);
+            acc[curr.date] = curr.pocet_davek + acc[String(last)];
+          } else {
+            acc[curr.date] = curr.pocet_davek;
+          }
+          return acc;
+        }, {}),
     };
   });
 
@@ -169,6 +185,12 @@ getData(
           ? (acc.davka3[i] = acc.davka3[i] + curr.davka3[i])
           : (acc.davka3[i] = curr.davka3[i]);
       });
+      const keys4 = Object.keys(curr.narok);
+      keys4.forEach((i) => {
+        acc.narok[i]
+          ? (acc.narok[i] = acc.narok[i] + curr.narok[i])
+          : (acc.narok[i] = curr.narok[i]);
+      });
 
       return acc;
     },
@@ -179,6 +201,7 @@ getData(
       davka1: {},
       davka2: {},
       davka3: {},
+      narok: {},
     }
   );
 
