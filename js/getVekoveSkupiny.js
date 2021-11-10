@@ -71,12 +71,16 @@ const zdrcniVekoveSkupiny = (vekoveSkupiny, hranice) => {
   return result;
 };
 
-const zkombinujDnyDavky = (davky, noveDavky) => {
-  noveDavky.foreEach((den) => {
-    davky.filter((davka) => {
-      return davka[0] === den[0];
-    });
-  });
+const vyhlad = (davka) => {
+  const keys = Object.keys(davka);
+  const min = Math.min(...keys.map((i) => parseInt(i)));
+  const max = Math.max(...keys.map((i) => parseInt(i)));
+  let n = min;
+  while (n < max) {
+    davka[String(n)] ? null : (davka[String(n)] = davka[String(n - 86400000)]);
+    n += 86400000;
+  }
+  return davka;
 };
 
 getData(
@@ -95,20 +99,22 @@ getData(
   const ockovaniPoDnech = zdrcnuteSkupiny.map((skupina) => {
     return {
       ...skupina,
-      davka1: vakcinaceDemo
-        .filter((i) => {
-          return i.vekova_skupina === skupina.name && i.poradi_davky === 1;
-        })
-        .reduce((acc, curr) => {
-          if (Object.keys(acc).length > 0) {
-            const keys = Object.keys(acc).map((i) => Number(i));
-            const last = Math.max(...keys);
-            acc[curr.date] = curr.pocet_davek + acc[String(last)];
-          } else {
-            acc[curr.date] = curr.pocet_davek;
-          }
-          return acc;
-        }, {}),
+      davka1: vyhlad(
+        vakcinaceDemo
+          .filter((i) => {
+            return i.vekova_skupina === skupina.name && i.poradi_davky === 1;
+          })
+          .reduce((acc, curr) => {
+            if (Object.keys(acc).length > 0) {
+              const keys = Object.keys(acc).map((i) => Number(i));
+              const last = Math.max(...keys);
+              acc[curr.date] = curr.pocet_davek + acc[String(last)];
+            } else {
+              acc[curr.date] = curr.pocet_davek;
+            }
+            return acc;
+          }, {})
+      ),
       davka2: vakcinaceDemo
         .filter((i) => {
           return i.vekova_skupina === skupina.name && i.poradi_davky === 2;
@@ -183,7 +189,9 @@ getData(
     "utf8"
   );
 
-  console.log(ockovaniPoDnechAll);
+  //console.log(vyhlad(ockovaniPoDnechAll.davka1));
+  //console.log(ockovaniPoDnech);
+
   //console.log(vakcinaceDemo);
   // console.log(zdrcnuteSkupiny);
   //console.log(all);
