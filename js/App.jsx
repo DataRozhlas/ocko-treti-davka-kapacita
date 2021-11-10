@@ -17,9 +17,11 @@ function App() {
   return (
     <>
       <h2>Kolik lidí má jednotlivé dávky?</h2>
-      {davky.map((d, i) => {
-        return <ChartProockovanost data={d} key={i} />;
-      })}
+      {davky
+        .filter((s) => s.name !== "0-11")
+        .map((d, i) => {
+          return <ChartProockovanost data={d} key={i} />;
+        })}
 
       <ChartKapacita />
     </>
