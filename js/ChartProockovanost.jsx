@@ -18,6 +18,7 @@ function ChartProockovanost({ data }) {
     },
     xAxis: {
       type: "datetime",
+      max: Math.max(...Object.keys(data.davka3).map((key) => Number(key))),
     },
     yAxis: {
       max: 100,
