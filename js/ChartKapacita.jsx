@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
-import kapacita from "./../data/kapacita.json";
+import volnaKapacita from "./../data/volnaKapacita.json";
+import maxKapacita from "./../data/maxKapacita.json";
 import ukoncenych from "./../data/ukoncenych.json";
 
 const colors = {
@@ -23,11 +24,17 @@ function ChartKapacita() {
     },
     credits: {
       href: "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19",
-      text: "Zdroj: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
+      text: "Zdroj dat: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
     },
     xAxis: {
       type: "datetime",
       tickmarkPlacement: "on",
+      min: 1632096000000,
+    },
+    yAxis: {
+      title: {
+        enabled: false,
+      },
     },
     plotOptions: {
       column: {
@@ -44,24 +51,17 @@ function ChartKapacita() {
       {
         name: "nárok na 3. dávku",
         color: colors[2020],
-        data: Object.keys(ukoncenych).map((key) => [
-          Number(key) + 15778800000,
-          ukoncenych[key].dokoncenych,
-        ]),
+        data: ukoncenych.map((item) => [item[0] + 15778800000, item[1]]),
       },
       {
         name: "volná kapacita na 3. dávku",
-        data: Object.keys(kapacita).map((key) => [
-          Number(key),
-          kapacita[key].volna_kapacita,
-        ]),
+        color: colors[2019],
+        data: volnaKapacita.map((item) => [item[0], item[1]]),
       },
       {
         name: "celková kapacita na 3. dávku",
-        data: Object.keys(kapacita).map((key) => [
-          Number(key),
-          kapacita[key].maximalni_kapacita,
-        ]),
+        color: colors[2018],
+        data: maxKapacita.map((item) => [item[0], item[1]]),
       },
     ],
   });

@@ -30,7 +30,7 @@ function ChartProockovanost({ data }) {
     },
     credits: {
       href: "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19",
-      text: "Zdroj: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
+      text: "Zdroj dat: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
     },
     exporting: {
       enabled: false,
@@ -56,7 +56,7 @@ function ChartProockovanost({ data }) {
     yAxis: {
       max: 100,
       title: {
-        text: "procento z dané věkové skupuiny",
+        text: "procento z dané věkové skupiny",
       },
       labels: {
         format: "{value} %",
