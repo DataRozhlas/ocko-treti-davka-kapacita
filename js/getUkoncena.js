@@ -19,7 +19,10 @@ getData(
   "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani.min.json"
 ).then((data) => {
   const skupiny = JSON.parse(data)
-    .data.map((skupina) => ({ ...skupina, date: Date.parse(skupina.datum) }))
+    .data.map((skupina) => ({
+      ...skupina,
+      date: Date.parse(skupina.datum),
+    }))
     .sort((a, b) => a.date - b.date);
 
   const dny = skupiny.reduce((acc, curr) => {

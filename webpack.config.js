@@ -6,7 +6,15 @@ module.exports = {
     path: path.resolve(__dirname),
     filename: "output.js",
   },
-
+  devServer: {
+    static: "./",
+    watchFiles: "./*",
+    compress: false,
+    historyApiFallback: true,
+    hot: true,
+    liveReload: true,
+    port: 3000,
+  },
   module: {
     rules: [
       {

@@ -108,10 +108,17 @@ function ChartProockovanost({ data }) {
         color: colors[2020],
         data: Object.keys(data.narok)
           .sort((a, b) => Number(a) - Number(b))
-          .map((k) => [
-            Number(k) + 15778800000,
-            (data.narok[k] / (data.Z + data.M)) * 100,
-          ]),
+          .map((k) => {
+            const timestamp = Number(k);
+            // if (timestamp < 1632009600000) {
+            //   return [timestamp, null];
+            // } else {
+            return [
+              timestamp + 15778800000,
+              (data.narok[k] / (data.Z + data.M)) * 100,
+            ];
+            // }
+          }),
       },
       {
         name: "3. dávka",

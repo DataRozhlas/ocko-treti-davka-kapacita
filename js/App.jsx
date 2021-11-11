@@ -80,7 +80,6 @@ function App() {
     <>
       <ChartKapacita />
 
-      <h2>Kolik lidí má jednotlivé dávky?</h2>
       {davky
         .filter((s) => s.name !== "0-11")
         .map((d, i) => {
