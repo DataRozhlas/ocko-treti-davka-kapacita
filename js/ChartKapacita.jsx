@@ -7,13 +7,16 @@ import ukoncenych from "./../data/ukoncenych.json";
 function ChartKapacita() {
   const [options, setOptions] = useState({
     title: {
+      useHTML: true,
       text: "Jak dlouhé budou fronty na třetí dávku",
     },
     credits: {
-      enabled: false,
+      href: "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19",
+      text: "Zdroj: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
     },
     xAxis: {
       type: "datetime",
+      tickmarkPlacement: "on",
     },
     series: [
       {
