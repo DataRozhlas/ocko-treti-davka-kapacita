@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import highchartsAnnotations from "highcharts/modules/annotations";
 import volnaKapacita from "./../data/volnaKapacita.json";
 import maxKapacita from "./../data/maxKapacita.json";
 import ukoncenych from "./../data/ukoncenych.json";
@@ -14,6 +15,7 @@ const colors = {
   avg: "#333",
   "uhrn-highlight": "#30638e",
 };
+highchartsAnnotations(Highcharts);
 
 function ChartKapacita() {
   const [options, setOptions] = useState({
@@ -47,6 +49,11 @@ function ChartKapacita() {
         borderWidth: 0,
       },
     },
+    tooltip: {
+      formatter: function () {
+        console.log(this.point);
+      },
+    },
     series: [
       {
         name: "nárok na 3. dávku",
@@ -64,6 +71,23 @@ function ChartKapacita() {
         color: colors[2018],
         data: maxKapacita.map((item) => [item[0], item[1]]),
         type: "line",
+      },
+    ],
+    annotations: [
+      {
+        draggable: "",
+        labels: [
+          {
+            point: {
+              x: 1640617200000,
+              y: 500000,
+              xAxis: 0,
+              yAxis: 0,
+            },
+            text: "půl roku od rekordního počtu naočkovaných",
+            useHTML: true,
+          },
+        ],
       },
     ],
   });
