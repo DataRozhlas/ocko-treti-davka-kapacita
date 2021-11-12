@@ -57,11 +57,13 @@ function ChartKapacita() {
         name: "volná kapacita na 3. dávku",
         color: colors[2019],
         data: volnaKapacita.map((item) => [item[0], item[1]]),
+        type: "line",
       },
       {
         name: "celková kapacita na 3. dávku",
         color: colors[2018],
         data: maxKapacita.map((item) => [item[0], item[1]]),
+        type: "line",
       },
     ],
   });
