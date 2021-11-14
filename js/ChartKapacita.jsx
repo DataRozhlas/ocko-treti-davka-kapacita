@@ -49,11 +49,6 @@ function ChartKapacita() {
         borderWidth: 0,
       },
     },
-    tooltip: {
-      formatter: function () {
-        console.log(this.point);
-      },
-    },
     series: [
       {
         name: "nárok na 3. dávku",

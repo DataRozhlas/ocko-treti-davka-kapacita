@@ -8,7 +8,7 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 
 [Zkraťte lhůtu pro dobrovolné přeočkování](https://www.facebook.com/groups/iniciativasnih/posts/402613491404387/) a dopřejte po vzoru Británie a Izraele třetí dávku zájemcům už za pět měsíců místo dosavadních šesti. A snažte se ještě co nejrychleji [doočkovat všechny starší 65 let](https://www.irozhlas.cz/zpravy-domov/jan-konvalinka-biochemik-nemocnice-promorenost-koronavirus-ockovani-proti_2111112002_dok).
 
-Návody expertů, jak udržet počet obětí covidu v aktuální vlně alespoň v jednotkách tisíc, narážejí na všeobecnou únavu a nezájem. Datová analýza serveru iROZHLAS.cz ukazuje, že kapacity očkovacích center zatím nijak nereagují na to, že lidí, kteří uplynutím šesti měsíců od základního očkování získávají nárok na posilující dávku, rychle přibývá: tento týden
+Návody expertů, jak udržet počet obětí covidu v aktuální vlně alespoň v jednotkách tisíc, narážejí na všeobecnou únavu a nezájem. Datová analýza serveru iROZHLAS.cz ukazuje, že kapacity očkovacích center zatím nijak nereagují na to, že lidí, kteří uplynutím šesti měsíců od základního očkování získávají nárok na posilující dávku, rychle přibývá: tento týden jich je lehce přes sto tisíc, poslední týden v roce mezi vánočními svátky bude fázově posunutá vlna letního očkování vrcholit a o třetí dávku se bude moci teoreticky přihlásit až půl milionu nových zájemců.
 
 <wide><div id="app"></div></wide>
 
