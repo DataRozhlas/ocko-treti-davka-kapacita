@@ -75,18 +75,31 @@ Highcharts.setOptions({
   },
 });
 
-function App() {
-  return (
-    <>
-      <ChartKapacita />
-
-      {davky
-        .filter((s) => s.name !== "0-11")
-        .map((d, i) => {
-          return <ChartProockovanost data={d} key={i} />;
-        })}
-    </>
-  );
+function App({ graf }) {
+  if (graf === "proocko") {
+    return (
+      <div>
+        <div id="hlavni">
+          <ChartProockovanost data={davky[0]} />
+        </div>
+        <div id="multipes">
+          {davky
+            .filter(
+              (s) => s.name !== "0-11" && s.name !== "Všechny věkové skupiny"
+            )
+            .map((d, i) => {
+              return (
+                <div className="malygraf">
+                  <ChartProockovanost data={d} key={i} />
+                </div>
+              );
+            })}
+        </div>
+      </div>
+    );
+  } else if (graf === "kapacita") {
+    return <ChartKapacita />;
+  }
 }
 
 export default App;

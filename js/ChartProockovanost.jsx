@@ -20,12 +20,13 @@ function ChartProockovanost({ data }) {
   const [options, setOptions] = useState({
     chart: {
       type: "area",
+      heigh: "56%",
     },
     title: {
       useHTML: true,
       text:
         data.name !== "Všechny věkové skupiny"
-          ? `Věková skupina ${data.name} let`
+          ? `${data.name} let`
           : `${data.name} (včetně malých dětí)`,
     },
     credits: {

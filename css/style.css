@@ -84,3 +84,12 @@ text.highcharts-credits {
   fill: #fff;
   color: #fff;
 }
+
+#multipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.malygraf {
+  width: 50%;
+}

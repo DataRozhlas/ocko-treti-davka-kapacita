@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import "./byeie"; // loučíme se s IE
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App graf={"proocko"} />, document.getElementById("proocko"));
+ReactDOM.render(<App graf={"kapacita"} />, document.getElementById("kapacita"));
 
 /*
 // snadné načtení souboru pro každého!

@@ -1,4 +1,4 @@
-title: "Třetí dávky: Záchranná brzda, kterou se málokomu chce použít"
+title: "Třetí dávky: Bepečnostní pás, který se málokomu chce zacvaknout"
 perex: "Nárok na posilovací dávku očkování proti covidu nevyužila ani polovina z těch, kteří už se mohli přihlásit o termín."
 styles: ["https://fonts.googleapis.com/css2?family=Asap", "https://fonts.googleapis.com/css2?family=Roboto"]
 libraries: [] #jquery, d3, highcharts, datatables
@@ -6,11 +6,11 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 
 ---
 
-[Zkraťte po vzoru Británie a Izraele lhůtu pro dobrovolné přeočkování](https://www.facebook.com/groups/iniciativasnih/posts/402613491404387/) a dopřejte posilovací dávku zájemcům už pět měsíců po prvním kole místo stávajících šesti. A snažte se co nejrychleji [doočkovat lidi starší 65 let](https://www.irozhlas.cz/zpravy-domov/jan-konvalinka-biochemik-nemocnice-promorenost-koronavirus-ockovani-proti_2111112002_dok). Návody expertů, jak udržet počet obětí aktuální vlny epidemie aspoň v jednotkách tisíc, narážejí na únavu i nezájem. 
+[Zkraťte po vzoru Británie a Izraele lhůtu pro dobrovolné přeočkování](https://www.facebook.com/groups/iniciativasnih/posts/402613491404387/) a dopřejte posilovací dávku zájemcům už pět měsíců po prvním kole místo stávajících šesti. A snažte se co nejrychleji [doočkovat lidi starší 65 let](https://www.irozhlas.cz/zpravy-domov/jan-konvalinka-biochemik-nemocnice-promorenost-koronavirus-ockovani-proti_2111112002_dok). Návody expertů, jak udržet počet obětí aktuální vlny epidemie aspoň v jednotkách tisíc, narážejí na únavu i nezájem.
 
 Analýza datových novinářů serveru iROZHLAS.cz ukazuje, že se poptávka po očkování začala po dlouhé letní stagnaci mírně zvedat až ke konci října, kdy vláda přestala neočkovaným proplácet testy. Z věkové skupiny 25-34 let ale dosud nemá druhou dávku ani polovina.
 
-GRAF CELKOVÉ PROOČKOVANOSTI + překlikávání věkových kategorií
+<wide><div id="proocko"></div></wide>
 
 Z lidí nad 70 let, kteří se na začátku roku očkovali mezi prvními, zatím možnost objednat se na posilovací dávku nevyužila ani polovina z těch, kdo by teoreticky mohli.
 
@@ -24,12 +24,10 @@ Silnější vedlejší účinky sociologům častěji hlásili mladší lidé. M
 
 Nejefektivnější motivace jsou podle jeho výzkumu ty nefinanční a snižující nejistotu. Tedy například možnost vybrat si typ vakcíny a vyšší odpovědnost státu za náklady nežádoucích účinků, jako je zmíněná nemocenská.
 
-GRAF LIDÍ S NÁROKEM vs. kapacita očkovacích center
+<wide><div id="kapacita"></div></wide>
 
 TADY NĚCO CHYBÍ TADY NĚCO CHYBÍ TADY NĚCO CHYBÍ, že kapacity očkovacích center zatím nijak nereagují na to, že rychle přibývá lidí, kteří uplynutím šesti měsíců od základního očkování získávají nárok na posilující dávku. Tento týden jich je lehce přes sto tisíc, poslední týden v roce mezi vánočními svátky bude fázově posunutá vlna letního očkování vrcholit a o třetí dávku se bude moci teoreticky přihlásit až půl milionu nových zájemců.
 
 ## Jak klesá imunita
 
 „Pravděpodobně se vždy budeme očkovat jako na chřipku, možná vznikne kombinovaná vakcína. Lokálně se vyskytne nějaké ohnisko, které pak uhasne. A tak to asi bude na celém světě. Úplnou tečku, že by ta nemoc zmizela ze světa, nikdy neuděláme,“ [řekl ve vysílání Českého rozhlasu](https://www.irozhlas.cz/zivotni-styl/zdravi/smejkal-epidemiolog-koronavirus-ockovani_2111110954_pj) epidemiolog Petr Smejkal.
-
-<wide><div id="app"></div></wide>
