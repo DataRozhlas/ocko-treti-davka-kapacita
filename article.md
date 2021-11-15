@@ -8,7 +8,7 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 
 [Zkraťte po vzoru Británie a Izraele lhůtu pro dobrovolné přeočkování](https://www.facebook.com/groups/iniciativasnih/posts/402613491404387/) a dopřejte posilovací dávku zájemcům už pět měsíců po prvním kole místo stávajících šesti. A snažte se co nejrychleji [doočkovat lidi starší 65 let](https://www.irozhlas.cz/zpravy-domov/jan-konvalinka-biochemik-nemocnice-promorenost-koronavirus-ockovani-proti_2111112002_dok). Návody expertů, jak udržet počet obětí aktuální vlny epidemie aspoň v jednotkách tisíc, narážejí na únavu i nezájem.
 
-Analýza datových novinářů serveru iROZHLAS.cz ukazuje, že se poptávka po očkování začala po dlouhé letní stagnaci mírně zvedat až ke konci října, kdy vláda přestala neočkovaným proplácet testy. Z věkové skupiny 25-34 let ale dosud nemá druhou dávku ani polovina.
+Analýza datových novinářů serveru iROZHLAS.cz ukazuje, že poptávka po očkování se po dlouhé letní stagnaci začala mírně zvedat až ke konci října, kdy vláda přestala neočkovaným proplácet testy. Z věkové skupiny 25-34 let ale dosud nemá druhou dávku ani polovina.
 
 <wide><div id="proocko"></div></wide>
 
@@ -26,8 +26,18 @@ Nejefektivnější motivace jsou podle jeho výzkumu ty nefinanční a snižují
 
 <wide><div id="kapacita"></div></wide>
 
-TADY NĚCO CHYBÍ TADY NĚCO CHYBÍ TADY NĚCO CHYBÍ, že kapacity očkovacích center zatím nijak nereagují na to, že rychle přibývá lidí, kteří uplynutím šesti měsíců od základního očkování získávají nárok na posilující dávku. Tento týden jich je lehce přes sto tisíc, poslední týden v roce mezi vánočními svátky bude fázově posunutá vlna letního očkování vrcholit a o třetí dávku se bude moci teoreticky přihlásit až půl milionu nových zájemců.
+Lidí, kteří uplynutím šesti měsíců od základního očkování získávají nárok na posilující dávku, rychle přibývá: tento týden jich je lehce přes sto tisíc, poslední týden v roce mezi vánočními svátky bude fázově posunutá vlna letního očkování vrcholit a o třetí dávku se bude moci teoreticky přihlásit až půl milionu nových zájemců. Analýza iROZHLAS.cz přitom počítá za dokončené očkování nejen druhou dávku, ale i jednodávkovou vakcínu Janssen.
 
-## Jak klesá imunita
+Kapacita očkovacích center však na očekávanou zvýšenou poptávku zatím nijak nereaguje. Hlavní nápor by totiž podle aktuální očkovací strategie měli pobrat praktičtí lékaři. „Vakcín je kvantum,“ ujistil například středočeský krajský koordinátor očkování Martin Polák.
+
+Přesto se na jejich aplikaci čeká: [podle aktuální statistiky](https://ockovani.opendatalab.cz/statistiky) uplyne od registrace k rezervaci v průměru 1,1 týdne – nerozlišuje se však, zda jde o rezervaci na první či třetí dávku. Na posilovací dávku aktuálně čeká 75 tisíc lidí, za den ji dostane okolo 20 tisíc.
+
+"Fakt to není jednoduché, zvlášť na některých místech, kde se míchá všechno dohromady, to znamená první dávky, druhé dávky, třetí dávky, bez registrace, s registrací," popsal koordinátor Polák. Otevření velkokapacitních očkovacích center, která fungovala během jara a léta, už podle Poláka není možné, a to ze dvou důvodů: jednak už kulturní sály a sportovní haly slouží svým původním účelům, a především není dostatek personálu.
+
+Server iROZHLAS.cz se na to, jakým způsobem chce zvládnout očekávaný zvýšený zájem o třetí dávky, dotázal minulý týden písemně ministerstva zdravotnictví. E-mail zůstal bez odpovědi, ani jeden z pěti pracovníků tiskového oddělení dnes nezvedal telefon.
+
+## Jak klesá imunita?
+
+[Studie na vzorku 780 tisíc lidí v USA](https://www.science.org/doi/10.1126/science.abm0620#F1) prokázala, že účinnost očkování proti koronaviru klesá v čase rychleji, než uváděly optimistické odhady. U Pfizeru a Moderny je riziko pozitivního testu po půl roce zhruba dvojnásobné než těsně po naočkování, u jednodávkové Janssen dokonce sedminásobné. Ochrana před vážným průběhem a smrtí zůstala i po půl roce a navzdory nakažlivějším variantám viru vyšší (73 % Janssen, 81,5 % Moderna a 84,3 % Pfizer), u lidí starších než 65 let ovšem efektivita klesla na 52,2 % u Janssenu, 75,5 % u Moderny a 70,1 % u Pfizeru. Posilující třetí dávka dokáže [podle klinických testů](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-phase-3-trial-data-showing) vrátit účinnost opět nad 90 %.
 
 „Pravděpodobně se vždy budeme očkovat jako na chřipku, možná vznikne kombinovaná vakcína. Lokálně se vyskytne nějaké ohnisko, které pak uhasne. A tak to asi bude na celém světě. Úplnou tečku, že by ta nemoc zmizela ze světa, nikdy neuděláme,“ [řekl ve vysílání Českého rozhlasu](https://www.irozhlas.cz/zivotni-styl/zdravi/smejkal-epidemiolog-koronavirus-ockovani_2111110954_pj) epidemiolog Petr Smejkal.
