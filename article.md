@@ -8,13 +8,13 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 
 [Zkraťte po vzoru Británie a Izraele lhůtu pro dobrovolné přeočkování](https://www.facebook.com/groups/iniciativasnih/posts/402613491404387/) a dopřejte posilovací dávku zájemcům už pět měsíců po prvním kole místo stávajících šesti. A snažte se co nejrychleji [doočkovat lidi starší 65 let](https://www.irozhlas.cz/zpravy-domov/jan-konvalinka-biochemik-nemocnice-promorenost-koronavirus-ockovani-proti_2111112002_dok). Návody expertů, jak udržet počet obětí aktuální vlny epidemie aspoň v jednotkách tisíc, narážejí na únavu i nezájem. 
 
-Analýza datových novinářů serveru iROZHLAS.cz ukazuje, že se poptávka po očkování začala po dlouhé letní stagnaci mírně zvedat až ke konci října, kdy vláda přestala neočkovaným proplácet testy. Ve věkové skupině 25-34 let ale dosud nemá druhou dávku ani polovina lidí.
+Analýza datových novinářů serveru iROZHLAS.cz ukazuje, že se poptávka po očkování začala po dlouhé letní stagnaci mírně zvedat až ke konci října, kdy vláda přestala neočkovaným proplácet testy. Z věkové skupiny 25-34 let ale dosud nemá druhou dávku ani polovina.
 
 GRAF CELKOVÉ PROOČKOVANOSTI + překlikávání věkových kategorií
 
-Z lidí nad 70 let, kteří se na začátku roku očkovali mezi prvními, možnost objednat se na posilovací dávku zatím nevyužila ani polovina z těch, kdo by teoreticky mohli.
+Z lidí nad 70 let, kteří se na začátku roku očkovali mezi prvními, zatím možnost objednat se na posilovací dávku nevyužila ani polovina z těch, kdo by teoreticky mohli.
 
-V nejohroženější skupině lidí starších než 80 let má třetí dávku necelá třetina obyvatel. Teoretický nárok na něj má ovšem víc než polovina.
+V nejohroženější skupině lidí starších než 80 let má třetí dávku necelá třetina obyvatel. Teoretický nárok na ni má ovšem víc než polovina.
 
 ## Strach z vedlejších účinků?
 
