@@ -77,8 +77,8 @@ Highcharts.setOptions({
 
 const isMobile = window.innerWidth < 700;
 
-function App({ graf }) {
-  if (graf === "proocko") {
+function App({ id }) {
+  if (id === "proocko") {
     return (
       <div>
         <div id="hlavni">
@@ -89,17 +89,17 @@ function App({ graf }) {
             .filter(
               (s) => s.name !== "0-11" && s.name !== "Všechny věkové skupiny"
             )
-            .map((d, i) => {
+            .map((d) => {
               return (
-                <div className={isMobile ? null : "malygraf"}>
-                  <ChartProockovanost data={d} key={i} />
+                <div className={isMobile ? null : "malygraf"} key={d.name}>
+                  <ChartProockovanost data={d} />
                 </div>
               );
             })}
         </div>
       </div>
     );
-  } else if (graf === "kapacita") {
+  } else if (id === "kapacita") {
     return <ChartKapacita />;
   }
 }

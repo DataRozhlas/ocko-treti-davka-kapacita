@@ -31,7 +31,7 @@ function ChartProockovanost({ data }) {
     },
     credits: {
       href: "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19",
-      text: "Zdroj dat: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
+      text: "Zdroj dat: MZ ČR (výpočty iROZHLAS.CZ)",
     },
     exporting: {
       enabled: false,
@@ -64,8 +64,10 @@ function ChartProockovanost({ data }) {
       },
     },
     tooltip: {
-      //valueSuffix: " mm",
+      valueSuffix: " %",
       shared: true,
+      valueDecimals: 1,
+      xDateFormat: "%A %e. %B %Y",
     },
     plotOptions: {
       line: {
@@ -92,14 +94,26 @@ function ChartProockovanost({ data }) {
         color: colors[2018],
         data: Object.keys(data.davka1)
           .sort((a, b) => Number(a) - Number(b))
-          .map((k) => [Number(k), (data.davka1[k] / (data.Z + data.M)) * 100]),
+          .map((k) => {
+            return {
+              x: Number(k),
+              y: (data.davka1[k] / (data.Z + data.M)) * 100,
+              name: data.davka1[k],
+            };
+          }),
       },
       {
         name: "2. dávka",
         color: colors[2019],
         data: Object.keys(data.davka2)
           .sort((a, b) => Number(a) - Number(b))
-          .map((k) => [Number(k), (data.davka2[k] / (data.Z + data.M)) * 100]),
+          .map((k) => {
+            return {
+              x: Number(k),
+              y: (data.davka2[k] / (data.Z + data.M)) * 100,
+              name: data.davka2[k],
+            };
+          }),
       },
       {
         name: "nárok na 3. dávku",
@@ -111,14 +125,11 @@ function ChartProockovanost({ data }) {
           .sort((a, b) => Number(a) - Number(b))
           .map((k) => {
             const timestamp = Number(k);
-            // if (timestamp < 1632009600000) {
-            //   return [timestamp, null];
-            // } else {
-            return [
-              timestamp + 15811200000,
-              (data.narok[k] / (data.Z + data.M)) * 100,
-            ];
-            // }
+            return {
+              x: timestamp + 15811200000,
+              y: (data.narok[k] / (data.Z + data.M)) * 100,
+              name: data.narok[k],
+            };
           }),
       },
       {
@@ -126,7 +137,13 @@ function ChartProockovanost({ data }) {
         color: colors[2020],
         data: Object.keys(data.davka3)
           .sort((a, b) => Number(a) - Number(b))
-          .map((k) => [Number(k), (data.davka3[k] / (data.Z + data.M)) * 100]),
+          .map((k) => {
+            return {
+              x: Number(k),
+              y: (data.davka3[k] / (data.Z + data.M)) * 100,
+              name: data.davka3[k],
+            };
+          }),
       },
     ],
   });
