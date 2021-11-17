@@ -1,4 +1,4 @@
-title: "Bezpečnostní pás, který se chce málokomu zacvaknout. O třetí dávku se nepřihlásila ani polovina lidí s nárokem"
+title: "Bezpečnostní pás, který se málokomu chtělo zacvaknout. O třetí dávku se nepřihlásila ani polovina lidí s nárokem"
 perex: "Posilovací dávka vakcíny proti covidu dokáže výrazně snížit riziko nákazy a zvlášť u lidí nad 65 i úmrtí. Češi a Češky, kteří se k ní mohou registrovat, tak ale zatím z větší části nečiní. A ti, kteří činí, na ni čekají."
 styles: ["https://fonts.googleapis.com/css2?family=Asap", "https://fonts.googleapis.com/css2?family=Roboto"]
 libraries: [] #jquery, d3, highcharts, datatables

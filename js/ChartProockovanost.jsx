@@ -115,7 +115,7 @@ function ChartProockovanost({ data }) {
             //   return [timestamp, null];
             // } else {
             return [
-              timestamp + 15778800000,
+              timestamp + 15811200000,
               (data.narok[k] / (data.Z + data.M)) * 100,
             ];
             // }
