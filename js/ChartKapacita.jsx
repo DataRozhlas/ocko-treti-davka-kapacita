@@ -24,6 +24,10 @@ function ChartKapacita() {
       useHTML: true,
       text: "Jak dlouhé budou fronty na třetí dávku?",
     },
+    subtitle: {
+      useHTML: true,
+      text: "Lidí s nárokem na posilovací očkování začalo rychle přibývat. Hlášená kapacita očkovacích center na to zatím nereaguje",
+    },
     credits: {
       href: "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19",
       text: "Zdroj dat: Ministerstvo zdravotnictví ČR (výpočty iROZHLAS.CZ)",
@@ -49,11 +53,17 @@ function ChartKapacita() {
         borderWidth: 0,
       },
     },
+    tooltip: {
+      shared: true,
+      dateTimeLabelFormats: {
+        week: "Týden od %A %e. %B %Y",
+      },
+    },
     series: [
       {
         name: "nárok na 3. dávku",
         color: colors[2020],
-        data: ukoncenych.map((item) => [item[0] + 15778800000, item[1]]),
+        data: ukoncenych.map((item) => [item[0] + 15724800000, item[1]]),
       },
       {
         name: "volná kapacita na 3. dávku",
