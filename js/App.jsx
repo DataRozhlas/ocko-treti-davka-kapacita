@@ -75,6 +75,8 @@ Highcharts.setOptions({
   },
 });
 
+const isMobile = window.innerWidth < 700;
+
 function App({ graf }) {
   if (graf === "proocko") {
     return (
@@ -89,7 +91,7 @@ function App({ graf }) {
             )
             .map((d, i) => {
               return (
-                <div className="malygraf">
+                <div className={isMobile ? null : "malygraf"}>
                   <ChartProockovanost data={d} key={i} />
                 </div>
               );

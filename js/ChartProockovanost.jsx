@@ -20,14 +20,14 @@ function ChartProockovanost({ data }) {
   const [options, setOptions] = useState({
     chart: {
       type: "area",
-      heigh: "56%",
+      height: "56%",
     },
     title: {
       useHTML: true,
       text:
         data.name !== "Všechny věkové skupiny"
           ? `${data.name} let`
-          : `${data.name} (včetně malých dětí)`,
+          : `Průběh očkování: ${data.name} (včetně malých dětí)`,
     },
     credits: {
       href: "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19",
@@ -46,7 +46,7 @@ function ChartProockovanost({ data }) {
           from: 1632096000000,
           to: maxDate,
           label: {
-            text: "oficiálně probíhá<br>očkování 3. dávkou",
+            text: "oficiální<br>očkování<br>3. dávkou",
             style: {
               color: "#444",
             },
