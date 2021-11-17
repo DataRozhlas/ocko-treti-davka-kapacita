@@ -64,9 +64,7 @@ function ChartProockovanost({ data }) {
       },
     },
     tooltip: {
-      valueSuffix: " %",
       shared: true,
-      valueDecimals: 1,
       xDateFormat: "%A %e. %B %Y",
     },
     plotOptions: {
@@ -98,9 +96,13 @@ function ChartProockovanost({ data }) {
             return {
               x: Number(k),
               y: (data.davka1[k] / (data.Z + data.M)) * 100,
-              name: data.davka1[k],
+              custom: data.davka1[k].toLocaleString("cs-CZ"),
             };
           }),
+        tooltip: {
+          pointFormat:
+            '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y:.1f} %</b>, tj. {point.custom} lidí<br/>',
+        },
       },
       {
         name: "2. dávka",
@@ -111,9 +113,13 @@ function ChartProockovanost({ data }) {
             return {
               x: Number(k),
               y: (data.davka2[k] / (data.Z + data.M)) * 100,
-              name: data.davka2[k],
+              custom: data.davka2[k].toLocaleString("cs-CZ"),
             };
           }),
+        tooltip: {
+          pointFormat:
+            '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y:.1f} %</b>, tj. {point.custom} lidí<br/>',
+        },
       },
       {
         name: "nárok na 3. dávku",
@@ -128,9 +134,13 @@ function ChartProockovanost({ data }) {
             return {
               x: timestamp + 15811200000,
               y: (data.narok[k] / (data.Z + data.M)) * 100,
-              name: data.narok[k],
+              custom: data.narok[k].toLocaleString("cs-CZ"),
             };
           }),
+        tooltip: {
+          pointFormat:
+            '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y:.1f} %</b>, tj. {point.custom} lidí<br/>',
+        },
       },
       {
         name: "3. dávka",
@@ -141,9 +151,13 @@ function ChartProockovanost({ data }) {
             return {
               x: Number(k),
               y: (data.davka3[k] / (data.Z + data.M)) * 100,
-              name: data.davka3[k],
+              custom: data.davka3[k].toLocaleString("cs-CZ"),
             };
           }),
+        tooltip: {
+          pointFormat:
+            '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y:.1f} %</b>, tj. {point.custom} lidí<br/>',
+        },
       },
     ],
   });
