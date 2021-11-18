@@ -12,7 +12,7 @@ const colors = {
   "uhrn-highlight": "#30638e",
 };
 
-function ChartProockovanost({ data }) {
+function ChartProockovanost({ data, isMobile }) {
   const maxDate = Math.max(
     ...Object.keys(data.davka3).map((key) => Number(key))
   );
@@ -20,7 +20,7 @@ function ChartProockovanost({ data }) {
   const [options, setOptions] = useState({
     chart: {
       type: "area",
-      height: "56%",
+      height: isMobile ? null : "56%",
     },
     title: {
       useHTML: true,

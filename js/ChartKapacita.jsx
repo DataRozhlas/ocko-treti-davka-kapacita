@@ -98,7 +98,7 @@ function ChartKapacita() {
   });
 
   return (
-    <div>
+    <div className="embed">
       <HighchartsReact highcharts={Highcharts} options={options} />
     </div>
   );

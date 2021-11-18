@@ -82,7 +82,7 @@ function App({ id }) {
     return (
       <div>
         <div id="hlavni">
-          <ChartProockovanost data={davky[0]} />
+          <ChartProockovanost data={davky[0]} isMobile={isMobile} />
         </div>
         <div id="multipes">
           {davky
@@ -91,8 +91,8 @@ function App({ id }) {
             )
             .map((d) => {
               return (
-                <div className={isMobile ? null : "malygraf"} key={d.name}>
-                  <ChartProockovanost data={d} />
+                <div className={isMobile ? "hlavni" : "malygraf"} key={d.name}>
+                  <ChartProockovanost data={d} isMobile={isMobile} />
                 </div>
               );
             })}

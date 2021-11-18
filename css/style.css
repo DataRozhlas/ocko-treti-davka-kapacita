@@ -85,7 +85,12 @@ text.highcharts-credits {
   color: #fff;
 }
 
+.hlavni {
+  width: 100%;
+}
+
 #multipes {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
